@@ -15,12 +15,13 @@
     "eslint-plugin-import": "2.0.1",
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.4.1",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "snyk": "^1.25.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "snyk test && react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
